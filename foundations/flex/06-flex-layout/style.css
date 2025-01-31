@@ -7,7 +7,7 @@ body {
   font-family: Roboto, sans-serif;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* required to push footer to bottom */
 }
 
 ul {
@@ -22,7 +22,7 @@ li a {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* get some space between left and right */
 }
 
 .left-links {
