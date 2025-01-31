@@ -5,6 +5,36 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li a {
+  text-decoration: none;
+  color: grey;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-links {
+  display: flex;
+  gap: 1vw;
+  margin: 1vw;
+}
+
+.right-links {
+  display: flex;
+  gap: 1vw;
+  margin: 1vw;
 }
 
 img {
@@ -16,6 +46,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
 }
 
 input {
@@ -23,4 +54,20 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+.content {
+  flex: 1 0 auto; /* this one pushed the footer to bottom */
+  margin: 10%; /* this one get the elements centered lmaoooo */
+} 
+
+.content * {
+  margin-bottom: 10px; /* add space between input and button */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  background-color: #eeeeee;
 }
